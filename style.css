@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: #2B283A;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 36px;
+    background-color: #F55A5A;
+}
+
+.nav--logo {
+    width: 24px;
+    height: 24px;
+}
+
+.nav--logo-text {
+   
+ 
+margin-left: 7px;
+width: 109px;
+height: 16px;
+
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px;
+  
+}
+
+.card {
+  width: 90%; /* Set width to 90% of the container */
+  margin: 0 auto;
+  max-width: 800px; /* Set maximum width for larger screens */
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+
+
+.card__image {
+  width: 100%; /* Set image width to 100% of the card width */
+  height: auto; /* Allow height to adjust based on content */
+  border-radius: 5px;
+  image-rendering: pixelated;
+}
+
+
+.card--content {
+  flex: 1; /* Use remaining space */
+  padding: 10px; /* Adjust padding for content */
+  margin-left: 20px;
+}
+
+.card-content-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+
+.red-icon {
+    color: #F55A5A;
+}
+
+.card-content-top i {
+    margin-right: 5px;
+}
+
+
+.card-content-top p,
+.card-content-top a {
+  margin-right: 15px;
+}
+
+h1 {
+  
+    
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;   
+    
+}
+
+h2 {
+    
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 12px;
+    
+}
+
+.card + .card {
+  margin-top: 20px; /* Adjust margin to create space between cards */
+  
+  border-top: 1px solid #ccc; /* Add border to create a horizontal line */
+  padding-top: 35px; /* Adjust padding to create space between card content and line */
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .card__image {
+    width: 30%; /* Set image width to 30% of the card width on larger screens */
+    max-width: 125px; /* Set maximum width for the image */
+  }
+}
+
+
+
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
+
+
