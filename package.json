@@ -1,18 +1,19 @@
 {
-  "name": "project",
+  "name": "Scrim-s00nh28h2d",
+  "description": "https://v2.scrimba.com/s00nh28h2d",
+  "scripts": {
+    "watch": "webpack -w",
+    "build": "webpack"
+  },
   "dependencies": {
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "webpack": "^2.0"
   },
   "devDependencies": {
-    "webpack": "^2.0",
     "babel-core": "^6.0",
     "babel-loader": "^7.0",
     "babel-preset-env": "*",
     "babel-preset-react": "*"
-  },
-  "scripts": {
-    "build": "webpack",
-    "watch": "webpack -w"
   }
 }

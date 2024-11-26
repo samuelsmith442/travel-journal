@@ -3,8 +3,8 @@ import React from "react";
 const Card = (props) => {
   return (
     <div className="card">
-      <img src={props.imageUrl} alt={props.title} className="card__image" />
-      <div className="card--content">
+      <img src={props.imageUrl} alt={props.title} className="card-image" />
+      <div className="card-content">
         <div className="card-content-top">
           <i className="fas fa-map-marker-alt red-icon"></i>
           <p>{props.location.toUpperCase()}</p>
